@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/Favicon.png" type="img/png">
+    <title>Informatique GBNA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@500;600;700&display=swap');
+        body {
+            background: linear-gradient(180deg, #EEE 0%, rgba(255, 255, 255, 0.85) 100%);
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: KoHo;
+            margin: 0px;
+            min-height: 100%;
+        }
+        header{
+            height: 225px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header{
+            display: contents;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gbnapng {
+            width: 11%;
+        }
+        main{
+            height: 670px;
+        }
+        .box{
+            margin-bottom: 65px;
+            border-radius: 44px;
+            background: #FFF;
+            box-shadow: 0px 0px 25.1px 6px rgba(0, 0, 0, 0.05);
+            width: 1150px;
+            height: 563.49px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+        }
+        .docpng{
+            width: 100%;
+            height: 70%;
+            flex-shrink: 0;
+            object-fit: contain;
+            
+        }
+        .imgbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2{
+            display: flex;
+            object-fit: contain;
+        }
+        .textbox{
+            width:90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            color: #4370B4;
+        }
+        .glpibox{
+            width: 390px;
+            height: 165px;
+            flex-shrink: 0;
+            border-radius: 14px;
+            border: 1px solid #d7ebf9;
+            background: linear-gradient(109deg, rgba(212, 230, 255, 0.20) 18.95%, rgba(92, 142, 203, 0.20) 82.07%);                
+            transition:
+                width 1s,
+                height 1s,
+                border 1s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+        .islbox{
+            width: 390px;
+            height: 165px;
+            flex-shrink: 0;
+            border-radius: 14px;
+            border: 1px solid #dbf3c1;
+            background: linear-gradient(279deg, rgba(186, 214, 50, 0.20) -6.76%, rgba(249, 255, 218, 0.20) 87.33%);
+            transition:
+                width 1s,
+                height 1s,
+                border 1s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .glpibox:hover{
+            width: 410px;
+            height: 170px;
+            border: 1px solid #597CAF;
+        }
+        .islbox:hover{
+            width: 420px;
+            height: 175px;
+            border: 1px solid #96B96A;
+        }
+        .glpipng{
+            width: 65px;
+            padding-top: 15px;
+        }
+        .islpng{
+            width: 101px;
+            height: 27px;
+            padding-bottom: 25px;
+        }
+        .titlebox2-1{
+            font-weight: 700;
+            letter-spacing: 0.56px;
+            text-transform: uppercase;
+            margin:1px;
+            font-size:12px;
+        }
+        .titlebox2-2{
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: KoHo;
+            font-weight: 600;
+            margin:1px;
+            font-size:12px;
+            color: #96A451;
+            text-align: center;
+        }
+        .textbox-in{
+            color: #4370B4;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: KoHo;
+            width: 325px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        ul{
+            margin:0;
+            word-wrap: break-word;
+            font-weight:600;
+            font-size:11px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        footer{
+            height: 100%;
+			width: 100%;
+			background: #469C46;
+			position: fixed;
+        }
+        .link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    </style>
+</head>
+<body>
+
+    <header>
+       <div class ="header">
+        <img class="gbnapng" src="img/gbnasante.png "/>
+       </div>
+    </header>
+    <main>
+        <div class="box">
+            <div class="box2">
+                <div class="imgbox">
+                    <img class="docpng" src="img/DrHelp.png "/> 
+                </div>
+                <div class="textbox">
+                    <button class="glpibox" onclick="window.location.href='https://gbna.with31.glpi-network.cloud/marketplace/formcreator/front/wizard.php';">
+                        <img class="glpipng" src="img/glpi.png "/>
+                        <div class="textbox-in">
+                            <p class="titlebox2-1">POUR TOUS LES SUJETS :</p>
+                            <ul>
+                                <li>DEMANDE OU DÉCLARATION D'INCIDENT</li>
+                                <li>CRÉATION OU MODIFICATION DE COMPTE</li>
+                               <li>DEMANDE D'ACHAT DE MATÉRIEL</li>
+                                <li>DEMANDE NOUVELLE IMPRIMANTE</li>
+                              <li>...</li>
+                            </ul>
+                        </div>
+                    </button>
+                    <button class="islbox" onclick="window.location.href='https://assistance.bordeauxnord.com/users/main/join.html';">
+                        <img class="islpng" src="img/ISLOnline.png "/>
+                        <p class="titlebox2-2">VOUS ÊTES EN LIGNE AVEC UN INFORMATICIEN DU </br> GROUPE ET VOUS SOUHAITEZ LUI DONNER ACCÈS À </br> VOTRE POSTE INFORMATIQUE.</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
